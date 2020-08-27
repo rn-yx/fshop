@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.fshop.component.redis.RedisCacheConfig,\
+  com.fshop.component.redis.RedisDistributedLock,\
+  com.fshop.component.redis.RedisUtils

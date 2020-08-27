@@ -1,0 +1,54 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: fshop-pay-pay
+  dubbo:
+    application:
+      name: ${spring.application.name}
+    registry:
+      address: zookeeper://192.168.171.128:2181?backup=192.168.171.128:2182,192.168.171.128:2183
+    scan: com.fshop.pay
+  redis:
+    host: 192.168.171.128
+    port: 6379
+    password: rn1234
+    database: 0
+    timeout: 60s
+    lettuce:
+      pool:
+        max-idle: 8
+        min-idle: 1
+        max-wait:  -1s
+        max-active: -1
+  rabbitmq:
+    host: 192.168.171.128
+    port: 5672
+    username: rn
+    password: rn1234
+    publisher-returns: true
+    publisher-confirms: true
+    listener:
+      simple:
+        acknowledge-mode: manual
+        retry:
+          enabled: true
+      direct:
+        acknowledge-mode: manual
+
+logging:
+  config: classpath:logback-${spring.profiles.active}.xml
+  level:
+    io.swagger.models.parameters.AbstractSerializableParameter: error
+
+swagger:
+  enable: true
+  base-package: com.fshop
+  title: 分布式/微服务网秒杀-订单API
+  description: 清纯、致远、浪漫！
+  version: 1.0.0
+  contact:
+    name: rannuo
+    url: www.fshop.com
+    email: rannuo1010@gmail.com

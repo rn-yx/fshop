@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.fshop.component.core.config.AppConfigProperties,\
+  com.fshop.component.core.exception.GlobalExceptionHandler

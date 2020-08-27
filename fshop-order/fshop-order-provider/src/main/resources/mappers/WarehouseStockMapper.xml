@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fshop.order.mapper.WarehouseStockMapper">
+
+    <update id="deductStockNum">
+        update so_warehouse_stock
+        set current_num=current_num - #{productNum}
+        where product_id = #{productId}
+          and current_num > #{productNum}
+    </update>
+    <select id="selectStockNumByProductId" resultType="java.lang.Integer">
+        select current_num
+        from so_warehouse_stock
+        where product_id = #{productId}
+    </select>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, warehouse_id, product_id, current_num, lock_num, transit_num, average_cost, gmt_modified, gmt_create
+    </sql>
+
+</mapper>

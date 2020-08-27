@@ -1,0 +1,46 @@
+{
+  "hints": [],
+  "groups": [],
+  "properties": [
+    {
+      "name": "swagger.enable",
+      "type": "java.lang.Boolean",
+      "description": "Disable or enable Swagger documents.Default is true."
+    },
+    {
+      "name": "swagger.base-package",
+      "type": "java.lang.String",
+      "description": "Base package for swagger scan."
+    },
+    {
+      "name": "swagger.title",
+      "type": "java.lang.String",
+      "description": "Swagger api title."
+    },
+    {
+      "name": "swagger.description",
+      "type": "java.lang.String",
+      "description": "Swagger api description."
+    },
+    {
+      "name": "swagger.version",
+      "type": "java.lang.String",
+      "description": "Swagger api version."
+    },
+    {
+      "name": "swagger.contact.name",
+      "type": "java.lang.String",
+      "description": "Swagger api contact name}."
+    },
+    {
+      "name": "swagger.contact.url",
+      "type": "java.lang.String",
+      "description": "Swagger api contact url."
+    },
+    {
+      "name": "swagger.contact.email",
+      "type": "java.lang.String",
+      "description": "Swagger api contact email."
+    }
+  ]
+}
