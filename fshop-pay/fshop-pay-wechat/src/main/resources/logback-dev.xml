@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-    <property name="log_home" value="./log/product-facade"/>
+    <property name="log_home" value="./log/pay-wechat"/>
     <property name="char_set" value="utf-8"/>
     <property name="max_history" value="30"/>
 
