@@ -24,7 +24,7 @@ import java.time.LocalDateTime;
  * Description: 用户表DTO
  *
  * @author rannuo1010@gmail.com
- * @date 2020-08-26
+ * @date 2020/2/22
  */
 @Data
 public class UserDTO implements Serializable {

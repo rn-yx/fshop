@@ -31,8 +31,8 @@ import java.util.List;
 public class ProductRpcServiceFallback implements ProductRpcService {
 
     @Override
-    public List<ProductDTO> getOnShelfProducts(int productStatus) {
-        log.info("获取已商品[状态：{}]触发熔断回调", productStatus);
+    public List<ProductDTO> getOnShelfProducts() {
+        log.info("获取已上架商品列表触发熔断回调");
         return new ArrayList<>(0);
     }
 

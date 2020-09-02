@@ -11,12 +11,12 @@ spring:
       address: zookeeper://192.168.171.128:2181?backup=192.168.171.128:2182,192.168.171.128:2183
     protocol:
       name: dubbo
-      port: 20880
+      port: 20881
       status: server
     scan: com.fshop.product.service
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.171.128:3306/seckill_product?autoReconnect=true&useUnicode=true&createDatabaseIfNotExist=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+    url: jdbc:mysql://192.168.171.128:3306/fshop_product?autoReconnect=true&useUnicode=true&createDatabaseIfNotExist=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
     username: root
     password: rn1234
     hikari:

@@ -26,7 +26,7 @@ import java.time.LocalDateTime;
  * Description: 用户表VO
  *
  * @author rannuo1010@gmail.com
- * @date 2020-08-26
+ * @date 2020/2/22
  */
 @Data
 @ApiModel(value="User对象VO", description="用户表视图对象")

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fshop.order.mapper.OrderSubMapper">
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, order_master_id, order_sn, user_id, order_money, district_money, payment_money, payment_method, payment_time, receiver, receive_time, province, city, district, address, shipping_company, shipping_sn, shipping_money, shipping_time, order_status, order_point, invoice_head, gmt_modified, gmt_create
+    </sql>
+
+</mapper>

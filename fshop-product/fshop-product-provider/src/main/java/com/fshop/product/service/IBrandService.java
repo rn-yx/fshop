@@ -15,8 +15,8 @@
  */
 package com.fshop.product.service;
 
-import com.fshop.product.entity.Brand;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.fshop.product.entity.Brand;
 
 /**
  * Description: 品牌表服务接口

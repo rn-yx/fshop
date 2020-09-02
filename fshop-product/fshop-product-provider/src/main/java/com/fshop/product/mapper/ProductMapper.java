@@ -18,11 +18,10 @@ package com.fshop.product.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.fshop.product.entity.Product;
 
-import java.io.Serializable;
 import java.util.List;
 
 /**
- * Description: 商品Mapper 接口
+ * Description: 商品Mapper接口
  *
  * @author rannuo1010@gmail.com
  * @date 2020/2/22
@@ -30,17 +29,19 @@ import java.util.List;
 public interface ProductMapper extends BaseMapper<Product> {
 
     /**
-     * 根据ID查询商品表
+     * 根据ID查询商品
      *
-     * @param id 商品表ID
-     * @return 商品表对象
+     * @param id 商品ID
+     * @return 商品对象
      */
-    Product selectProductById(Serializable id);
+    Product selectProductById(long id);
 
     /**
-     * 根据状态查询查询商品列表
+     * 根据状态查询商品
      *
-     * @return
+     * @param productStatus 状态：0未审核，1已审核，2下架，3上架
+     * @return 商品列表
      */
-    List<Product> selectOnShelfProducts(int productStatus);
+    List<Product> selectByProductStatus(int productStatus);
+
 }

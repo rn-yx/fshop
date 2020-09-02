@@ -15,8 +15,8 @@
  */
 package com.fshop.product.service;
 
-import com.fshop.product.entity.Category;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.fshop.product.entity.Category;
 
 /**
  * Description: 商品分类表服务接口

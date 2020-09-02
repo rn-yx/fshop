@@ -9,7 +9,7 @@ spring:
       name: ${spring.application.name}
     registry:
       address: zookeeper://192.168.171.128:2181?backup=192.168.171.128:2182,192.168.171.128:2183
-    scan: com.seckill.rest
+    scan: com.fshop.rest
   redis:
     host: 192.168.171.128
     port: 6379
@@ -44,11 +44,11 @@ logging:
 
 swagger:
   enable: true
-  base-package: com.seckill
+  base-package: com.fshop.rest
   title: 分布式/微服务网秒杀-订单API
   description: 清纯、致远、浪漫！
   version: 1.0.0
   contact:
     name: rannuo
-    url: www.seckill.com
+    url: www.fs.com
     email: rannuo1010@gmail.com

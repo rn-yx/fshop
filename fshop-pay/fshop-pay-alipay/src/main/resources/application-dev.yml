@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 18070
 
 spring:
   application:
@@ -9,6 +9,10 @@ spring:
       name: ${spring.application.name}
     registry:
       address: zookeeper://192.168.171.128:2181?backup=192.168.171.128:2182,192.168.171.128:2183
+    protocol:
+      name: dubbo
+      port: 20884
+      status: server
     scan: com.fshop.pay
   redis:
     host: 192.168.171.128

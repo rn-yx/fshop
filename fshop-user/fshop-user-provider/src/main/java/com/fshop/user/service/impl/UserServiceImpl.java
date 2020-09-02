@@ -27,7 +27,7 @@ import javax.annotation.Resource;
  * Description: 用户表服务接口实现类
  *
  * @author rannuo1010@gmail.com
- * @date 2020-08-26
+ * @date 2020/2/22
  */
 @Service
 public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IUserService {

@@ -9,13 +9,13 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.fshop.user</groupId>
     <artifactId>fshop-user</artifactId>
+    <groupId>com.fshop.user</groupId>
     <packaging>pom</packaging>
 
     <modules>
-        <module>fshop-user-provider</module>
         <module>fshop-user-facade</module>
+        <module>fshop-user-provider</module>
     </modules>
 
 

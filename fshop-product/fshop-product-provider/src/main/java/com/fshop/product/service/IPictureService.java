@@ -15,8 +15,8 @@
  */
 package com.fshop.product.service;
 
-import com.fshop.product.entity.Picture;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.fshop.product.entity.Picture;
 
 /**
  * Description: 商品图片表服务接口

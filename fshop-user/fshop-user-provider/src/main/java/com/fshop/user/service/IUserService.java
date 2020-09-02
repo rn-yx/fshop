@@ -22,7 +22,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * Description: 用户表服务接口
  *
  * @author rannuo1010@gmail.com
- * @date 2020-08-26
+ * @date 2020/2/22
  */
 public interface IUserService extends IService<User> {
 

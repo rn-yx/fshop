@@ -15,8 +15,8 @@
  */
 package com.fshop.product.service;
 
-import com.fshop.product.entity.Comment;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.fshop.product.entity.Comment;
 
 /**
  * Description: 商品评论表服务接口

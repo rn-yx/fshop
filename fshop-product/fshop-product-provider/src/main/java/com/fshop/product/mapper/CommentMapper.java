@@ -15,25 +15,15 @@
  */
 package com.fshop.product.mapper;
 
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.fshop.product.entity.Comment;
-
-import java.io.Serializable;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
- * Description: 商品评论表 Mapper 接口
+ * Description: 商品评论表Mapper接口
  *
  * @author rannuo1010@gmail.com
  * @date 2020/2/22
  */
 public interface CommentMapper extends BaseMapper<Comment> {
-
-    /**
-     * 根据ID查询商品评论表
-     *
-     * @param id 商品评论表ID
-     * @return 商品评论表对象
-     */
-    Comment selectCommentById(Serializable id);
 
 }

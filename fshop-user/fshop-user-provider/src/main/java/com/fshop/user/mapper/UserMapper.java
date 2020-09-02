@@ -18,22 +18,12 @@ package com.fshop.user.mapper;
 import com.fshop.user.entity.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
-import java.io.Serializable;
-
 /**
  * Description: 用户表Mapper接口
  *
  * @author rannuo1010@gmail.com
- * @date 2020-08-26
+ * @date 2020/2/22
  */
 public interface UserMapper extends BaseMapper<User> {
-
-    /**
-     * 根据ID查询用户表
-     *
-     * @param id 用户表ID
-     * @return 用户表对象
-     */
-    User selectUserById(Serializable id);
 
 }

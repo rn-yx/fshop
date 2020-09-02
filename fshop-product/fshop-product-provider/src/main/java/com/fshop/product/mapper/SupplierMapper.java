@@ -18,22 +18,12 @@ package com.fshop.product.mapper;
 import com.fshop.product.entity.Supplier;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
-import java.io.Serializable;
-
 /**
- * Description: 供应商表 Mapper 接口
+ * Description: 供应商表Mapper接口
  *
  * @author rannuo1010@gmail.com
  * @date 2020/2/22
  */
 public interface SupplierMapper extends BaseMapper<Supplier> {
-
-    /**
-     * 根据ID查询供应商表
-     *
-     * @param id 供应商表ID
-     * @return 供应商表对象
-     */
-    Supplier selectSupplierById(Serializable id);
 
 }

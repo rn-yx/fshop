@@ -15,25 +15,15 @@
  */
 package com.fshop.product.mapper;
 
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.fshop.product.entity.Brand;
-
-import java.io.Serializable;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
- * Description: 品牌表 Mapper 接口
+ * Description: 品牌表Mapper接口
  *
  * @author rannuo1010@gmail.com
  * @date 2020/2/22
  */
 public interface BrandMapper extends BaseMapper<Brand> {
-
-    /**
-     * 根据ID查询品牌表
-     *
-     * @param id 品牌表ID
-     * @return 品牌表对象
-     */
-    Brand selectBrandById(Serializable id);
 
 }

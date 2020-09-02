@@ -2,11 +2,6 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.fshop.product.mapper.CategoryMapper">
 
-    <select id="selectCategoryById" resultType="com.fshop.product.entity.Category">
-        SELECT <include refid="Base_Column_List" />
-        FROM sp_category WHERE id=#{id}
-    </select>
-
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
         id, parent_id, category_name, category_code, category_level, category_status, gmt_modified, gmt_create

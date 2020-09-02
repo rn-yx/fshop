@@ -18,22 +18,12 @@ package com.fshop.product.mapper;
 import com.fshop.product.entity.Picture;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
-import java.io.Serializable;
-
 /**
- * Description: 商品图片表 Mapper 接口
+ * Description: 商品图片表Mapper接口
  *
  * @author rannuo1010@gmail.com
  * @date 2020/2/22
  */
 public interface PictureMapper extends BaseMapper<Picture> {
-
-    /**
-     * 根据ID查询商品图片表
-     *
-     * @param id 商品图片表ID
-     * @return 商品图片表对象
-     */
-    Picture selectPictureById(Serializable id);
 
 }

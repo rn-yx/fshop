@@ -15,8 +15,8 @@
  */
 package com.fshop.product.service;
 
-import com.fshop.product.entity.Supplier;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.fshop.product.entity.Supplier;
 
 /**
  * Description: 供应商表服务接口

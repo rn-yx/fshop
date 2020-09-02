@@ -15,6 +15,8 @@
  */
 package com.fshop.product.rpc;
 
+import com.fshop.product.model.dto.ProductDTO;
+
 import java.util.List;
 
 /**
@@ -28,9 +30,8 @@ public interface ProductRpcService {
     /**
      * 获取已上架商品列表
      *
-     * @param productStatus
      * @return
      */
-    List<ProductDTO> getOnShelfProducts(int productStatus);
+    List<ProductDTO> getOnShelfProducts();
 
 }

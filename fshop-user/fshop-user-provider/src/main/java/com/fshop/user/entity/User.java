@@ -28,7 +28,7 @@ import lombok.experimental.Accessors;
  * Description: 用户表实体类
  *
  * @author rannuo1010@gmail.com
- * @date 2020-08-26
+ * @date 2020/2/22
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

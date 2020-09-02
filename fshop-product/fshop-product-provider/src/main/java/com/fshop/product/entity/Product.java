@@ -26,7 +26,7 @@ import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
 /**
- * Description: 商品表实体类
+ * Description: 商品实体类
  *
  * @author rannuo1010@gmail.com
  * @date 2020/2/22

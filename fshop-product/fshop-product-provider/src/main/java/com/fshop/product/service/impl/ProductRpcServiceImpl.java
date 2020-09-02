@@ -16,9 +16,11 @@
 package com.fshop.product.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
+import com.fshop.product.constant.ProductStatus;
+import com.fshop.product.entity.Product;
+import com.fshop.product.model.dto.ProductDTO;
 import com.google.common.collect.Lists;
 import com.fshop.component.core.utils.BeanUtils;
-import com.fshop.product.entity.Product;
 import com.fshop.product.mapper.ProductMapper;
 import com.fshop.product.rpc.ProductRpcService;
 import org.springframework.stereotype.Component;
@@ -41,8 +43,9 @@ public class ProductRpcServiceImpl implements ProductRpcService {
     private ProductMapper productMapper;
 
     @Override
-    public List<ProductDTO> getOnShelfProducts(int productStatus) {
-        List<Product> productList = productMapper.selectOnShelfProducts(productStatus);
+    public List<ProductDTO> getOnShelfProducts() {
+        List<Product> productList = productMapper.selectByProductStatus(ProductStatus.ON_SHELF.getStatus());
         return CollectionUtils.isEmpty(productList) ? Lists.newArrayList() : BeanUtils.copyProperties(productList, ProductDTO.class);
     }
+
 }

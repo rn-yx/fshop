@@ -29,6 +29,10 @@ import java.util.*;
 
 /**
  * Description: Mybatis Plus代码生成器
+ * ### 查询数据库所有表名并以逗号分隔
+ * ```
+ * SELECT GROUP_CONCAT(table_name  SEPARATOR ",") FROM information_schema.tables  WHERE TABLE_SCHEMA = 'xxx_table';
+ * ```
  *
  * @author 然诺
  * @date 2020/2/22
@@ -36,13 +40,13 @@ import java.util.*;
 public class CodeGenerator {
 
     private static final String DRIVER_CLASS_NAME = "com.mysql.cj.jdbc.Driver";
-    private static final String URL = "jdbc:mysql://192.168.171.128:3306/seckill_user?autoReconnect=true&useUnicode=true&createDatabaseIfNotExist=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8";
+    private static final String URL = "jdbc:mysql://192.168.171.128:3306/fshop_order?autoReconnect=true&useUnicode=true&createDatabaseIfNotExist=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8";
     private static final String USERNAME = "root";
     private static final String PASS = "rn1234";
     private static final String AUTHOR = "rannuo1010@gmail.com";
-    private static final String PROJECT_PATH = "D:\\JavaDev\\IDEA_J\\fshop\\fshop-user\\fshop-user-provider";
-    private static final String PROJECT_CODING_PATH = "\\src\\main\\java\\com\\fshop\\user";
-    private static final String PARENT_PACKAGE = "com.fshop.user";
+    private static final String PROJECT_PATH = "D:\\JavaDev\\IDEA_J\\fshop\\fshop-order\\fshop-order-provider";
+    private static final String PROJECT_CODING_PATH = "\\src\\main\\java\\com\\fshop\\order";
+    private static final String PARENT_PACKAGE = "com.fshop.order";
     private static final String SUPER_CONTROLLER_CLASS = "com.fshop.component.core.mvc.BaseController";
     private static final String GLOBAL_RET_CLASS = "com.fshop.component.core.result.GlobalRet";
 
