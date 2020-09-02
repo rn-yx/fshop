@@ -1,5 +1,5 @@
 /*
- * Copyright [2020] [rannuo]
+ * Copyright 2020 rannuo1010@gmail.com
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,6 +15,7 @@
  */
 package com.fshop.user.controller;
 
+import com.fshop.user.model.vo.UserVO;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import com.fshop.user.service.IUserService;
@@ -22,7 +23,6 @@ import com.fshop.user.entity.User;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import com.fshop.component.core.result.GlobalRet;
-import com.fshop.user.su.model.vo.UserVO;
 
 import java.io.Serializable;
 import javax.validation.Valid;

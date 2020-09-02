@@ -1,5 +1,5 @@
 /*
- * Copyright [2020] [rannuo]
+ * Copyright 2020 rannuo1010@gmail.com
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,7 +35,7 @@ import org.springframework.validation.annotation.Validated;
 public class AppConfigProperties {
 	/**
 	 * 是否向接口调用者输出异常信息
-	 * {
+	 *    {
 	 *       "name": "spring.application.output-exception",
 	 *       "type": "java.lang.Boolean",
 	 *       "defaultValue": false,

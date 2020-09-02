@@ -19,7 +19,7 @@
         <module>component-redis</module>
         <module>component-rabbitmq</module>
         <module>component-swagger</module>
-        <module>component-codegenerator</module>
+        <module>component-codegen</module>
         <module>component-mysql</module>
     </modules>
 
