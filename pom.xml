@@ -32,13 +32,10 @@
     </properties>
 
     <modules>
-        <module>fshop-basicservice</module>
-        <module>fshop-component</module>
-        <module>fshop-order</module>
-        <module>fshop-user</module>
-        <module>fshop-product</module>
-        <module>fshop-pay</module>
-        <module>fshop-rest-service</module>
+        <module>basis-service</module>
+        <module>business-service</module>
+        <module>convergent-service</module>
+        <module>open-component</module>
     </modules>
 
     <dependencyManagement>

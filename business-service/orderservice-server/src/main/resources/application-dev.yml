@@ -1,0 +1,67 @@
+server:
+  port: 18080
+
+spring:
+  application:
+    name: orderservice-server
+  dubbo:
+    application:
+      name: ${spring.application.name}
+    registry:
+      address: zookeeper://192.168.171.128:2181?backup=192.168.171.128:2182,192.168.171.128:2183
+    protocol:
+      name: dubbo
+      port: 20880
+      status: server
+    scan: com.fshop.order.service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.171.128:3306/fshop_order?autoReconnect=true&useUnicode=true&createDatabaseIfNotExist=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: rn1234
+    hikari:
+      maximum-pool-size: 100
+      minimum-idle: 10
+      idle-timeout: 600000
+      connection-timeout: 5000
+      connection-test-query: SELECT 1
+      max-lifetime: 18000000
+  redis:
+    host: 192.168.171.128
+    port: 6379
+    password: rn1234
+    database: 0
+    timeout: 60s
+    lettuce:
+      pool:
+        max-idle: 8
+        min-idle: 1
+        max-wait:  -1s
+        max-active: -1
+  rabbitmq:
+    host: 192.168.171.128
+    port: 5672
+    username: rn
+    password: rn1234
+    publisher-returns: true
+    publisher-confirms: true
+    listener:
+      simple:
+        acknowledge-mode: manual
+        retry:
+          enabled: true
+      direct:
+        acknowledge-mode: manual
+
+logging:
+  config: classpath:logback-${spring.profiles.active}.xml
+  level:
+    io.swagger.models.parameters.AbstractSerializableParameter: error
+
+mybatis-plus:
+  mapper-locations: classpath*:/mappers/**Mapper.xml
+  typeAliasesPackage:  com.fshop.*.entity
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 打印SQL

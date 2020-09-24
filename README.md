@@ -17,7 +17,7 @@ fshop
 │   ├── basicservice-admin
 │   ├── basicservice-config
 │   └── basicservice-sso
-├── fshop-component
+├── open-component
 │   ├── component-codegen
 │   ├── component-core
 │   ├── component-mysql
@@ -27,15 +27,14 @@ fshop
 │   └── component-utils
 ├── fshop-order
 │   ├── fshop-order-facade
-│   ├── fshop-order.iml
 │   └── fshop-order-provider
 ├── fshop-pay
 │   ├── fshop-pay-alipay
 │   └── fshop-pay-wechat
 ├── fshop-product
 │   ├── fshop-product-facade
-│   └── fshop-product-provider
-├── fshop-rest-service
+│   └── productservice-server
+├── fshop-seckill-service
 └── fshop-user
      ├── fshop-user-facade
      └── fshop-user-provider
