@@ -1,4 +1,4 @@
-# 高并发秒杀系统 FShop
+# FShop - 高并发秒杀系统
 
 ## 简介
 FShop是一款基于Spring Boot + Mybatis + Dubbo + Zookeeper + RabbitMQ + Redis + Nginx的高并发秒杀系统。FShop定位于高并发抢购业务系统快速建设， 提供下单、扣减库存、流量削峰、动静分离、热点隔离等核心问题解决方案。
