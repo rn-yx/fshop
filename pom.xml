@@ -36,6 +36,7 @@
         <module>business-service</module>
         <module>convergent-service</module>
         <module>open-component</module>
+        <module>job</module>
     </modules>
 
     <dependencyManagement>

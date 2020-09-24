@@ -1,0 +1,47 @@
+server:
+  port: 18082
+
+spring:
+  application:
+    name: scheduler-job
+  dubbo:
+    application:
+      name: ${spring.application.name}
+    registry:
+      address: zookeeper://192.168.171.128:2181?backup=192.168.171.128:2182,192.168.171.128:2183
+    protocol:
+      name: dubbo
+      port: 20882
+      status: server
+    scan: com.fshop.user.service
+  redis:
+    host: 192.168.171.128
+    port: 6379
+    password: rn1234
+    database: 0
+    timeout: 60s
+    lettuce:
+      pool:
+        max-idle: 8
+        min-idle: 1
+        max-wait:  -1s
+        max-active: -1
+  rabbitmq:
+    host: 192.168.171.128
+    port: 5672
+    username: rn
+    password: rn1234
+    publisher-returns: true
+    publisher-confirms: true
+    listener:
+      simple:
+        acknowledge-mode: manual
+        retry:
+          enabled: true
+      direct:
+        acknowledge-mode: manual
+
+logging:
+  config: classpath:logback-${spring.profiles.active}.xml
+  level:
+    io.swagger.models.parameters.AbstractSerializableParameter: error
