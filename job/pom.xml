@@ -13,5 +13,9 @@
     <artifactId>job</artifactId>
     <packaging>pom</packaging>
 
+    <modules>
+        <module>compensation-job</module>
+        <module>scheduler-job</module>
+    </modules>
 
 </project>
